@@ -1,0 +1,263 @@
+body {
+  padding-bottom: 75px;
+}
+.menu {
+  text-align: center;
+    height: auto;
+    background-color: #BDBDBD;
+    background-image: url(../img/fondoContacto1.jpg);
+}
+
+.logo {
+  color:black;
+  font-size: 18px;
+  text-decoration: none;
+  float: left;
+  padding: 10px;
+    font-weight: bold;
+}
+
+.logo:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.menu ul {
+  list-style: none;
+  text-align: center;
+  display: inline-flex;
+  margin: auto;
+  float:right;
+}
+
+.menu ul li {
+  padding: 10px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+    font-weight: bold;
+    
+}
+.menu ul li a:hover {
+  font-size: 20px;
+}
+
+.borderNegro{
+    border: 2px solid black;
+}
+.mainContent {
+    margin: auto;
+    width: 95%;
+    max-height: 800px;
+    overflow-x: hidden;
+}
+
+.floatR {
+    float: right;
+}
+.floatL {
+    float: left;
+}
+
+.derecha {
+    float: right;
+    width: 25%;
+    max-width: 300px;
+}
+
+.clear{
+  clear: both;
+}
+#tablaServicios{
+  width: 95%;
+  margin: auto;
+}
+
+#tablaServicios  td, #tablaServicios th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+#tablaServicios th {
+  background-color: #BDBDBD;
+  color: white;
+}
+#tablaServicios tr:nth-child(even) {background-color: #f2f2f2}
+#tablaServicios tr:hover {background-color: #ddd}
+
+#centroHome {
+    float:left;
+    width: 40%;
+    margin: 0 5% 0 5%;
+
+}
+#moduloBlogs {
+  float: left;
+  width: 25%;
+
+}
+#moduloBlogs li a {
+  text-decoration: none;
+  color: black;
+}
+/* widget the instagram */
+#instagram {
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+#instagram h4 {
+    padding: 5px;
+}
+#instagram h4 a {
+    color:black;
+    text-decoration: none;
+}
+
+#instagramWidget {
+    border: none;
+    overflow: hidden;
+    width: 100%;
+    max-width: 250px;
+    height: 550px;
+}
+
+.fondoImg {
+    background-image: url(../img/fondoContacto1.jpg);
+}
+
+@media screen and (max-width: 625px){
+    .menu {
+      width: 100%;
+      float:none;
+      text-align: center;
+    }
+    .logo {
+      float: none;
+    }
+    .menu ul{
+      font-size: 15px;
+      float: none;
+    }
+    .menu ul li a:hover {
+      font-size: 12px;
+    }
+
+    .mainContent {
+      overflow: visible;
+      height: 100%;
+      max-height: none;
+    }
+
+    #instagramWidget{
+        border:none;
+        overflow:hidden;
+        width:100%;
+        height:250px
+    }
+
+    #instagram h4 a {
+        font-size: 30px;
+    text-decoration: none;
+    }
+    #moduloBlogs{
+      float:none;
+      width: 100%;
+    }
+    .floatL {
+        float: none;
+        width: 100%;
+    }
+    .derecha {
+      float:none;
+      width: 100%;
+    }
+    #centroHome{
+      float: none;
+      width: 95%;
+
+    }
+}
+
+
+/* aqui empieza el css del carousel/slideshow */
+.content {
+  width: 210px;
+    height: 200px;
+  margin:auto;
+  perspective: 800px;
+  position: relative;
+  margin-top: 50px;
+}
+
+
+#slideshow{
+  width: 100%;
+  height: 50%;
+    padding-top: 20px;
+  position: absolute;
+  margin: auto;
+  transform-style:preserve-3d;
+  animation: rotation 20s infinite linear;
+}
+
+#slideshow:hover {
+  animation-play-state: paused;
+}
+
+
+#slideshow figure {
+  display: block;
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px 0px black;
+  transition: all 300ms;
+}
+
+#slideshow figure:hover{
+  box-shadow: 0px 0px 0px 0px black;
+  transform: scale(1.2);
+  transition: all 300ms;
+}
+
+#slideshow figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#slideshow figure:nth-child(2){transform: rotateY(40deg) translateZ(288px);}
+#slideshow figure:nth-child(3){transform: rotateY(80deg) translateZ(288px);}
+#slideshow figure:nth-child(4){transform: rotateY(120deg) translateZ(288px);}
+#slideshow figure:nth-child(5){transform: rotateY(160deg) translateZ(288px);}
+#slideshow figure:nth-child(6){transform: rotateY(200deg) translateZ(288px);}
+#slideshow figure:nth-child(7){transform: rotateY(240deg) translateZ(288px);}
+#slideshow figure:nth-child(8){transform: rotateY(280deg) translateZ(288px);}
+#slideshow figure:nth-child(9){transform: rotateY(320deg) translateZ(288px);}
+#slideshow figure:nth-child(10){transform: rotateY(360deg) translateZ(288px);}
+
+#slideshow img {
+  -webkit-filter:grayscale(1);
+  cursor: pointer;
+  transition: all 300ms;
+  width:90%;
+  height: 100%
+}
+
+#slideshow img:hover {
+  -webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+}
+
+@keyframes rotation {
+  from{
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+/* hasta aqui */
