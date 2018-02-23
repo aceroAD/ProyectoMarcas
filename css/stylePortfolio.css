@@ -1,11 +1,9 @@
 body {
-
+  margin-bottom: 50px;
 }
 
 .row {
     margin: auto;
-    
-
 }
 
 .column {
@@ -14,18 +12,19 @@ body {
     width: 23%;
     text-align: center;
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
 }
 
 .column p {
     text-align: justify;
 }
 .column img {
-  min-width: 150px;
+  min-width: 130px;
 }
 
 .content {
     width: 95%;
+    margin:auto;
 }
 
 @media screen and (max-width:625px){
