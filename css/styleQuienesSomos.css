@@ -1,0 +1,16 @@
+.fraseCont {
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/fondoContacto1.jpg);
+    background-color: transparent;
+    background-repeat:space;
+    font-size: 31px;
+    text-align: center;
+    padding: 40px 20px 0 20px;
+}
+
+.fraseCont span:hover {
+  visibility: visible;
+  opacity: 0;
+  transition: opacity 2s linear;
+}
