@@ -14,3 +14,64 @@
   opacity: 0;
   transition: opacity 2s linear;
 }
+
+.mainQuienes {
+    width: 75%;
+    padding: 10px;
+    margin: auto;
+    margin-top: none;
+    text-align: center;
+}
+
+.fondoQuienSoy {
+    background-image: url("https://i.imgur.com/0Ta6jWXh.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#quienSoy {
+    float: right;
+    width: 40%;
+    max-height:500px;
+    margin: 10% 30px 10%; 0;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    border: 5px solid #a1a1a1;
+    text-align: justify;
+    opacity: 0.7;
+}
+
+
+
+@media screen and (max-width: 900px){
+
+    .mainQuienes {
+        width: 90%;
+    }
+    .fondoQuienSoy {
+        background-image: url("https://i.imgur.com/r54CELfl.jpg");
+        background-size: auto;
+    }
+    
+    #quienSoy {
+        float: none;
+        overflow: hidden;
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+     #quienSoy {
+        float: none;
+        overflow: hidden;
+         width: 60%;
+         margin: auto;
+    }
+    
+    .fraseCont {
+        font-size: 25px;
+    }
+}
